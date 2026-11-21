@@ -25,7 +25,7 @@ fetch("https://dummyjson.com/products")
       alt="${product.title}"
     >
     <div class="mt-3 gap-3 flex flex-col flex-1">
-      <p class="text-gray-500 text-xl">${product.brand}</p>
+      <p class="text-gray-500 text-xl">${product.brand || ''}</p>
       <h2 class="text-3xl text-black line-clamp-1">${product.title}</h2>
             <div class="mt-2 flex items-center gap-1.5">
         <div class="flex items-center gap-0.5">
